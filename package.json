@@ -4,11 +4,13 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"npm run build:watch\" \"ng serve\" \"npm run watch:sass\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:sass": "node-sass ./src/app/sass_folder/ -o ./src/app/css_folder",
+    "watch:sass": "npm run build:sass && node-sass ./src/app/sass_folder/ -wo ./src/app/css_folder/"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +24,9 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
+    "node-sass": "^4.5.3",
     "rxjs": "^5.4.2",
+    "sass-loader": "^6.0.6",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
@@ -33,6 +37,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.1.1",
+    "concurrently": "^3.5.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",

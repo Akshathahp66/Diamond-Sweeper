@@ -1,0 +1,28 @@
+table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    td {
+        border: 1px solid #000;
+        margin: 1px;
+        p {
+            padding: 5px 20px;
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: bold;
+            color: #000;
+            margin: 0;
+            .fa.fa-diamond{
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.6);
+    
+    .modal-dialog{
+        margin: 10% auto;
+    }
+}
