@@ -12,7 +12,7 @@ The rules of the game are as follows:
     -   Otherwise, the square is opened, and blank
 4. The game ends when all diamonds are found. The user's score is the number of squares still left unturned.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
+This project was generated with [Angular CLI](https://cli.angular.io/)
 
 # Install Packages 
 
