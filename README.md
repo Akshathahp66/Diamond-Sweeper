@@ -1,4 +1,16 @@
-# DiamondSweeper
+# Diamond Sweeper
+# Problem Statement
+
+The goal of this exercise is to build a game.
+
+The rules of the game are as follows:
+
+1. The game board has 8x8 squares (initially, all represented by question marks)
+2. There are 8 diamonds hidden on the board, each diamond behind one of the squares
+3. When the user clicks on a square
+    -   If the square was hiding a diamond, the diamond appears
+    -   Otherwise, the square is opened, and blank
+4. The game ends when all diamonds are found. The user's score is the number of squares still left unturned.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
 
